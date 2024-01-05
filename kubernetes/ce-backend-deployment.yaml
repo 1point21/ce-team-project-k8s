@@ -17,10 +17,10 @@ spec:
         image: shenukacj/learners-api:latest
         ports:
         - containerPort: 8080
-        # volumeMounts:
-        # # - mountPath: /
-        #   name: data
-      # volumes:
-      # - name: data
-      #   persistentVolumeClaim:
-      #     claimName: pvc-dynamic
+        volumeMounts:
+        - mountPath: /var
+          name: data
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: pvc-dynamic
