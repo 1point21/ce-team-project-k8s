@@ -17,9 +17,9 @@ spec:
         image: shenukacj/learners-api:latest
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - mountPath: /
-          name: data
+        # volumeMounts:
+        # - mountPath: /
+        #   name: data
       volumes:
       - name: data
         persistentVolumeClaim:
