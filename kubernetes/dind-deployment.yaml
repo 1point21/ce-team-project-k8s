@@ -1,29 +1,29 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: learners-api
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: dind
-  template:
-    metadata:
-      labels:
-        app: dind
-    spec:
-      containers:
-      - name: dind
-        image: docker:dind
-        command: ["docker run -p 8080:8080 -p 50000:50000 --restart=on-failure -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock shenukacj/jenkins-docker:1.0.1"]
-        securityContext:
-            privileged: true
-        ports:
-        - containerPort: 8080
-        volumeMounts:
-        - mountPath: /var/lib/docker/volumes
-          name: data
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: demo-pvc
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: learners-api
+# spec:
+#   replicas: 2
+#   selector:
+#     matchLabels:
+#       app: dind
+#   template:
+#     metadata:
+#       labels:
+#         app: dind
+#     spec:
+#       containers:
+#       - name: dind
+#         image: docker:dind
+#         command: ["docker run -p 8080:8080 -p 50000:50000 --restart=on-failure -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock shenukacj/jenkins-docker:1.0.1"]
+#         securityContext:
+#             privileged: true
+#         ports:
+#         - containerPort: 8080
+#         volumeMounts:
+#         - mountPath: /var/lib/docker/volumes
+#           name: data
+#       volumes:
+#       - name: data
+#         persistentVolumeClaim:
+#           claimName: demo-pvc
