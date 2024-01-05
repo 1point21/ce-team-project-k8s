@@ -20,7 +20,7 @@ spec:
         # volumeMounts:
         # # - mountPath: /
         #   name: data
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: pvc-dynamic
+      # volumes:
+      # - name: data
+      #   persistentVolumeClaim:
+      #     claimName: pvc-dynamic
