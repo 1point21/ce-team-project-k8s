@@ -23,4 +23,4 @@ spec:
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: demo-pv
+          claimName: demo-pvc
