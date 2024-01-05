@@ -7,7 +7,7 @@ spec:
   - host: localhost
     http:
       paths:
-      - path: /var
+      - path: /
         pathType: Prefix
         backend:
           service:
