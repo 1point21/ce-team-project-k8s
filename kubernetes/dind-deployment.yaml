@@ -12,6 +12,10 @@ spec:
       labels:
         app: dind-jenkins
     spec:
+      initContainers:
+      - name: wait-for-docker
+        image: busybox
+        command: ["sh", "-c", "until docker info; do sleep 1; done"]
       containers:
       - name: dind-jenkins
         image: docker:dind
