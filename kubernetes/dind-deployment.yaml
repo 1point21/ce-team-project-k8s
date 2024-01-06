@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dind
+  name: dind-jenkins
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dind
+      app: dind-jenkins
   template:
     metadata:
       labels:
-        app: dind
+        app: dind-jenkins
     spec:
       containers:
-      - name: dind
+      - name: dind-jenkins
         image: docker:dind
-        # command: ["docker run -p 8084:8080 -p 50000:50000 shenukacj/jenkins-docker:1.0.1"]
+        command: ["docker", "run", "-p 8084:8080", "-p 50000:50000", "shenukacj/jenkins-docker:1.0.1"]
         securityContext:
             privileged: true
         ports:

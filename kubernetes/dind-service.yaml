@@ -4,7 +4,7 @@ metadata:
   name: jenkins-dind-service
 spec:
   selector:
-    app: dind
+    app: dind-jenkins
   ports:
   - protocol: TCP
     port: 8084
