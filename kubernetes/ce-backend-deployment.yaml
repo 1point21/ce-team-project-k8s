@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: learners-api
-        image: shenukacj/learners-api:1.0.0
+        image: shenukacj/learners-api:1.0.1
         ports:
         - containerPort: 8080
         volumeMounts:
