@@ -14,4 +14,18 @@ spec:
             name: frontend-service
             port:
               number: 3000
+      - path: /ping
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-service
+            port:
+              number: 8080
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-service
+            port:
+              number: 8080
   ingressClassName: nginx
