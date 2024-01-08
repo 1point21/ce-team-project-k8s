@@ -8,7 +8,7 @@ spec:
   ports:
   - protocol: TCP
     port: 8084
-    targetPort: 8084
+    targetPort: 8080
   type: LoadBalancer
 
 # shell into the dind pod and run the following comand
