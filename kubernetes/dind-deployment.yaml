@@ -15,8 +15,8 @@ spec:
       containers:
       - name: dind-jenkins
         image: docker:dind
-        # command: [docker"]
-        # args: ["info"]
+        command: ["docker"]
+        args: ["info"]
         securityContext:
             privileged: true
         ports:
