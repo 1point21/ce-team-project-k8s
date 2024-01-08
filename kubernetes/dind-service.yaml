@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins-dind-service
+  name: jenkins-dind-service2
 spec:
   selector:
     app: dind-jenkins
