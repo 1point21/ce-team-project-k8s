@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dind-jenkins
-        image: shenukacj/dind-jenkins:1.0.5
+        image: shenukacj/dind-jenkins:1.0.8
         securityContext:
             privileged: true
         ports:
