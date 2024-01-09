@@ -5,4 +5,4 @@ metadata:
   # annotations:
   #   ingressclass.kubernetes.io/is-default-class: "true"
 spec:
-  controller: nginx.org/nginx-prod
+  controller: k8s.io/nginx-prod
