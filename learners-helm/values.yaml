@@ -1,9 +1,9 @@
 ## default
+## comment out ingress-class.yaml
 ingress:
   host: localhost 
   ingressName: my-ingress
   ingressClassName: nginx
-  controller: k8s.io/ingress-nginx
 
 ## production
 # ingress:
