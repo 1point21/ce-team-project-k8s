@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dind-jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dind-jenkins
+  template:
+    metadata:
+      labels:
+        app: dind-jenkins
+    spec:
+      containers:
+      - name: dind-jenkins
+        image: shenukacj/dind-jenkins:1.1.4
+        securityContext:
+            privileged: true
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /var/lib/docker/volumes
+          name: data
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: demo-pvc

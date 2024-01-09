@@ -1,0 +1,9 @@
+host: localhost
+
+frontend:
+  name: learners-frontend
+  image: shenukacj/learners-frontend:1.0.2
+  containerPort: 80
+  servicePort: 3000
+  serviceType: ClusterIP
+  
