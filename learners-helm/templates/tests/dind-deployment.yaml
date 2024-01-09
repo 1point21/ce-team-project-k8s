@@ -14,15 +14,15 @@ spec:
     spec:
       containers:
       - name: dind-jenkins
-        image: shenukacj/dind-jenkins:1.1.4
+        image: {{ .Values.dind-jenkins.image }}
         securityContext:
             privileged: true
         ports:
         - containerPort: 8080
         volumeMounts:
-        - mountPath: /var/lib/docker/volumes
+        - mountPath: {{ .Values.dind-jenkins.mountpath }}
           name: data
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: demo-pvc
+          claimName: {{ .Values.dind-jenkins.claimName }}

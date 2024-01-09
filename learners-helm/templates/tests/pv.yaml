@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: demo-pv
+  name: {{ .Values.dind-jenkins.claimName }}
 spec:
   accessModes:
     - ReadWriteOnce
@@ -9,4 +9,4 @@ spec:
     storage: 1Gi
   storageClassName: hostpath
   hostPath:
-    path: /tmp/demo-pv
+    path: {{ .Values.dind-jenkins.path }}

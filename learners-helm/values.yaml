@@ -1,9 +1,17 @@
-host: localhost
+host: a62a4064d67034b2e86c834e98710ac9-b26e60e44764b904.elb.eu-west-2.amazonaws.com
+# host: localhost 
 
 frontend:
-  name: learners-frontend
   image: shenukacj/learners-frontend:1.0.2
-  containerPort: 80
   servicePort: 3000
-  serviceType: ClusterIP
-  
+
+backend:
+  image: shenukacj/learners-api:1.0.4
+  servicePort: 8080
+
+dind-jenkins:
+  image: docker:dind
+  mountpath: /var/lib/docker/volumes
+  claimName: demo-pv
+  servicePort: 8084
+  path: /tmp/demo-pv
