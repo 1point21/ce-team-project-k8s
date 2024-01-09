@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: dind-jenkins
-        # image: shenukacj/dind-jenkins:1.1.4
-        image: docker:dind
+        image: {{ .Values.dindJenkins.image }}
         securityContext:
             privileged: true
         ports:

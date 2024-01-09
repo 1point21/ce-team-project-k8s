@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: learners-frontend
-        image: shenukacj/learners-frontend:1.0.3
+        image: {{ .Values.frontend.image }}
         # env:
         # - name: VITE_API_BASE_URL
         #   value: http://localhost:8080

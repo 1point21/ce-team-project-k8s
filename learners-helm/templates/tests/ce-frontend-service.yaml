@@ -7,6 +7,6 @@ spec:
     app: learners-frontend
   ports:
   - protocol: TCP
-    port: 3000
+    port: {{ .Values.frontend.servicePort }}
     targetPort: 80
   type: ClusterIP

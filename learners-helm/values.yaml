@@ -6,7 +6,7 @@ frontend:
   servicePort: 3000
 
 backend:
-  image: shenukacj/learners-api:1.0.4
+  image: shenukacj/learners-api:1.0.6
   servicePort: 8080
 
 dindJenkins:
