@@ -1,9 +1,23 @@
-# host: a62a4064d67034b2e86c834e98710ac9-b26e60e44764b904.elb.eu-west-2.amazonaws.com
+## default
 ingress:
   host: localhost 
   ingressName: my-ingress
-  ingressClassName: nginx-prod
-  controller: k8s.io/nginx-prod
+  ingressClassName: nginx
+  controller: k8s.io/ingress-nginx
+
+## production
+# ingress:
+#   host: production-dns.com
+#   ingressName: my-ingress
+#   ingressClassName: nginx-prod
+#   controller: k8s.io/nginx-prod
+
+## test
+# ingress:
+#   host: test-dns.com
+#   ingressName: my-ingress
+#   ingressClassName: nginx-prod
+#   controller: k8s.io/nginx-prod
 
 frontend:
   image: shenukacj/learners-frontend:1.0.2
