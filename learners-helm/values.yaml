@@ -12,6 +12,7 @@ backend:
 dindJenkins:
   image: shenukacj/dind-jenkins:1.1.4
   servicePort: 8084
+  containerPort: 8080
   # mountpath: /var/lib/docker/volumes
   # claimName: demo-pv
   # path: /tmp/demo-pv
