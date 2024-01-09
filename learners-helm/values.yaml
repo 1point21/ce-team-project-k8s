@@ -1,5 +1,5 @@
-host: a62a4064d67034b2e86c834e98710ac9-b26e60e44764b904.elb.eu-west-2.amazonaws.com
-# host: localhost 
+# host: a62a4064d67034b2e86c834e98710ac9-b26e60e44764b904.elb.eu-west-2.amazonaws.com
+host: localhost 
 
 frontend:
   image: shenukacj/learners-frontend:1.0.2
