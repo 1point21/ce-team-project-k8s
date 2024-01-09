@@ -1,7 +1,7 @@
 ## default
 ## comment out ingress-class.yaml
 ingress:
-  host: localhost 
+  host: localhost
   ingressName: my-ingress
   ingressClassName: nginx
 
