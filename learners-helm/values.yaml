@@ -5,10 +5,12 @@ ingressName: my-ingress
 frontend:
   image: shenukacj/learners-frontend:1.0.2
   servicePort: 3000
+  type: ClusterIP
 
 backend:
   image: shenukacj/learners-api:1.0.6
   servicePort: 8080
+  type: ClusterIP
 
 dindJenkins:
   image: docker:dind

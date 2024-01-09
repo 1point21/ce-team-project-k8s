@@ -9,4 +9,4 @@ spec:
   - protocol: TCP
     port: {{ .Values.backend.servicePort }}
     targetPort: 8080
-  type: ClusterIP
+  type: {{ .Values.frontend.type }}
