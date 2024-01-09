@@ -7,8 +7,8 @@ spec:
     app: dind-jenkins
   ports:
   - protocol: TCP
-    port: {{ .Values.dindJenkins.servicePort }}
-    targetPort: 8080
+    port: 8084
+    targetPort: 8084
   type: LoadBalancer
 
 # shell into the dind pod and run the following comand
