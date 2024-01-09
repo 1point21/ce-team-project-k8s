@@ -10,9 +10,9 @@ backend:
   servicePort: 8080
 
 dindJenkins:
-  image: shenukacj/dind-jenkins:1.1.4
+  image: docker:dind
   servicePort: 8084
-  containerPort: 8080
+  containerPort: 8084
   # mountpath: /var/lib/docker/volumes
   # claimName: demo-pv
   # path: /tmp/demo-pv
