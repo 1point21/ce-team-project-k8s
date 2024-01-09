@@ -35,4 +35,4 @@ spec:
             name: backend-service
             port:
               number: {{ .Values.backend.servicePort }}
-  ingressClassName: {{ .Values.ingress.host }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
