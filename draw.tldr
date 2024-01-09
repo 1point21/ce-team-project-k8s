@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 1363.7373111248016,
-      "y": 212.00191727638247,
-      "lastActivityTimestamp": 1704712016481,
+      "x": 1374.5706851482391,
+      "y": 206.67640152931216,
+      "lastActivityTimestamp": 1704712043700,
       "meta": {}
     },
     {
@@ -89,10 +89,8 @@
     {
       "editingShapeId": null,
       "croppingShapeId": null,
-      "selectedShapeIds": [
-        "shape:NrfN8yriD36UaCXAFmCcC"
-      ],
-      "hoveredShapeId": "shape:NrfN8yriD36UaCXAFmCcC",
+      "selectedShapeIds": [],
+      "hoveredShapeId": null,
       "erasingShapeIds": [],
       "hintingShapeIds": [],
       "focusedGroupId": null,
@@ -104,7 +102,10 @@
     {
       "followingUserId": null,
       "opacityForNextShape": 1,
-      "stylesForNextShape": {},
+      "stylesForNextShape": {
+        "tldraw:geo": "rectangle",
+        "tldraw:color": "light-green"
+      },
       "brush": null,
       "scribbles": [],
       "cursor": {
@@ -231,8 +232,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1239.513973236084,
-      "y": 184.26314321517947,
+      "x": 1237.013973236084,
+      "y": 146.58084646224978,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
