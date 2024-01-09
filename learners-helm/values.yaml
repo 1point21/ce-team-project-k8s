@@ -13,6 +13,9 @@ dindJenkins:
   image: docker:dind
   servicePort: 8084
   containerPort: 8084
-  # mountpath: /var/lib/docker/volumes
-  # claimName: demo-pv
-  # path: /tmp/demo-pv
+
+pv:
+  mountpath: /var/lib/docker/volumes
+  claimName: demo-pv
+  path: /tmp/demo-pv
+  storageClassName: hostpath

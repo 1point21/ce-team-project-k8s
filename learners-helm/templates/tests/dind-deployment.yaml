@@ -20,9 +20,9 @@ spec:
         ports:
         - containerPort: 8080
         volumeMounts:
-        - mountPath: /var/lib/docker/volumes
+        - mountPath: {{ .Values.pv.mountpath }}
           name: data
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: demo-pvc
+          claimName: {{ .Values.pv.claimName }}
