@@ -36,4 +36,3 @@ spec:
             port:
               number: {{ .Values.backend.servicePort }}
   ingressClassName: nginx-prod
-  controller: k8s.io/nginx-prod
