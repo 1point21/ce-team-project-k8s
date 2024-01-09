@@ -20,9 +20,9 @@ spec:
         ports:
         - containerPort: 8080
         volumeMounts:
-        - mountPath: {{ .Values.dind-jenkins.mountpath }}
+        - mountPath: /var/lib/docker/volumes
           name: data
       volumes:
       - name: data
         persistentVolumeClaim:
-          claimName: {{ .Values.dind-jenkins.claimName }}
+          claimName: demo-pvc
