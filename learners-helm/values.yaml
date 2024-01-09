@@ -9,9 +9,9 @@ backend:
   image: shenukacj/learners-api:1.0.4
   servicePort: 8080
 
-dind-jenkins:
+dindJenkins:
   image: docker:dind
-  mountpath: /var/lib/docker/volumes
-  claimName: demo-pv
-  servicePort: 8084
-  path: /tmp/demo-pv
+  # mountpath: /var/lib/docker/volumes
+  # claimName: demo-pv
+  # servicePort: 8084
+  # path: /tmp/demo-pv

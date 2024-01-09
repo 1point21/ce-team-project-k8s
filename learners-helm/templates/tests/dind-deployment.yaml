@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dind-jenkins
-        image: {{ .Values.dind-jenkins.image }}
+        image: {{ .Values.dindJenkins.image }}
         securityContext:
             privileged: true
         ports:
