@@ -30,7 +30,7 @@ frontend:
 
 backend:
   # image: shenukacj/learners-api:1.0.6
-  image: shenukacj/learners-api:1.0.8
+  image: shenukacj/learners-api:1.0.10
   servicePort: 8080
   type: ClusterIP
 
