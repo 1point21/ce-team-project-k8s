@@ -1,3 +1,7 @@
+secrets:
+  url: jdbc:postgresql://default934a315.cqe7czveuhhz.eu-west-2.rds.amazonaws.com:5432/testdb2
+  username:
+  password: 
 ## default
 ## comment out ingress-class.yaml
 ingress:
@@ -26,7 +30,7 @@ frontend:
 
 backend:
   # image: shenukacj/learners-api:1.0.6
-  image: shenukacj/learners-api:0.1.0
+  image: shenukacj/learners-api:1.0.8
   servicePort: 8080
   type: ClusterIP
 
