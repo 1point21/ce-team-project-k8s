@@ -31,9 +31,9 @@ backend:
   type: ClusterIP
 
 dindJenkins:
-  image: docker:dind
+  image: shenukacj/dind-jenkins:1.1.4
   servicePort: 8084
-  containerPort: 8084
+  containerPort: 8080
 
 pv:
   mountpath: /var/lib/docker/volumes
