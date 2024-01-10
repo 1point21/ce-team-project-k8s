@@ -34,10 +34,3 @@ spec:
               key: password
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - mountPath: /var
-          name: data
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: demo-pvc

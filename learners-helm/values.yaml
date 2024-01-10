@@ -37,7 +37,7 @@ backend:
 dindJenkins:
   image: shenukacj/dind-jenkins:1.1.7
   servicePort: 8084
-  containerPort: 8080
+  containerPort: 8084
 
 pv:
   mountpath: /var/lib/docker/volumes
