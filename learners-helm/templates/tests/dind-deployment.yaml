@@ -19,10 +19,10 @@ spec:
             privileged: true
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - mountPath: {{ .Values.pv.mountpath }}
-          name: data
-      volumes:
-      - name: data
-        persistentVolumeClaim:
-          claimName: {{ .Values.pv.claimName }}
+      #   volumeMounts:
+      #   - mountPath: {{ .Values.pv.mountpath }}
+      #     name: data
+      # volumes:
+      # - name: data
+      #   persistentVolumeClaim:
+      #     claimName: {{ .Values.pv.claimName }}
