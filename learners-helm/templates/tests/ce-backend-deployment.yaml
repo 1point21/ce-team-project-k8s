@@ -15,6 +15,23 @@ spec:
       containers:
       - name: learners-api
         image: {{ .Values.backend.image }}
+        env:
+        # JDBC persistence:
+        - name: spring.datasource.url
+          valueFrom:
+            secretKeyRef:
+              name: mysecrets
+              key: url
+        - name: spring.datasource.username
+          valueFrom:
+            secretKeyRef:
+              name: mysecrets
+              key: username
+        - name: spring.datasource.password
+          valueFrom:
+            secretKeyRef:
+              name: mysecrets
+              key: password
         ports:
         - containerPort: 8080
         volumeMounts:
