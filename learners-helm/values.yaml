@@ -35,7 +35,7 @@ backend:
   type: ClusterIP
 
 dindJenkins:
-  image: shenukacj/dind-jenkins:1.1.4
+  image: shenukacj/dind-jenkins:1.1.7
   servicePort: 8084
   containerPort: 8080
 
