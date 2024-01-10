@@ -37,6 +37,6 @@ dindJenkins:
 
 pv:
   mountpath: /var/lib/docker/volumes
-  claimName: demo-pv
-  path: /tmp/demo-pv
+  claimName: demo-pv2
+  path: /tmp/demo-pv2
   storageClassName: hostpath
