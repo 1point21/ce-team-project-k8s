@@ -1,7 +1,7 @@
 secrets:
   url: jdbc:postgresql://default934a315.cqe7czveuhhz.eu-west-2.rds.amazonaws.com:5432/testdb2
-  username:
-  password: 
+  username: nclearner
+  password: password
 ## default
 ## comment out ingress-class.yaml
 ingress:
