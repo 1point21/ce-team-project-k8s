@@ -24,7 +24,7 @@ ingress:
 #   controller: k8s.io/nginx-prod
 
 frontend:
-  image: shenukacj/learners-frontend:1.0.5
+  image: shenukacj/learners-frontend:1.0.6
   servicePort: 3000
   type: ClusterIP
 
